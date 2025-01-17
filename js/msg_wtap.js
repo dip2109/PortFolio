@@ -26,13 +26,13 @@ document.querySelector('.btn1').addEventListener('click', async function (event)
 });
 
 async function sendWhatsAppMessage(data) {
-    const phoneNumber = "+918767491689"; // Replace with your target WhatsApp number
+    const phoneNumber = "+91xxxxxxxxxx"; // Replace with your target WhatsApp number
 
     try {
         const response = await fetch("https://graph.facebook.com/v21.0/422748917593803/messages", {
             method: "POST",
             headers: {
-                "Authorization": "Bearer EAAH9z7v3E5YBOwIZC001FcZA3kO8AA3sVhkxsAlInvkgtcoEGR7CZBSXm8geXkCccZCNdBXxnUrqLgeMq8W9fHL4DE7RGKyOsWiajm0WlCMhtPUXDm9VJsb41bJjxCXIfE1BLf3cWu0t300hmxOZC29VOn1gvCEhROeFe4aJyzN4IH3nnX0dlfFHtidCtMUMm3Vov6x8ZBCZAWbZBhrX0aJ3h2QwlJeC6JVGPAqzWCVL", // Replace with your token
+                "Authorization": "Bearer YOUR TOKEN", // Replace with your token
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
